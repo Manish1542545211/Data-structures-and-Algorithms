@@ -1,17 +1,15 @@
 #include<iostream>
 #include<limits.h>
 using namespace std;
-//Brute force approach;
+//Brute force approach;(optimised)
 void maxSubarraySum1(int arr[],int n){
      int maxSum=INT_MIN;
     for(int start=0;start<n;start++){
+        int cursum=0;
         for(int end=start;end<n;end++){
-            int currSum=0;
-            for(int i=start;i<=end;i++){
-                currSum +=arr[i];
-            }
-            cout<<currSum<<",";
-            maxSum=max(maxSum,currSum);
+            cursum =cursum+arr[end];
+            cout<<cursum<<" ";
+            maxSum=max(maxSum,cursum);
         }
         cout<<endl;
     }
