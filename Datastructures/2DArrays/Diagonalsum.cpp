@@ -25,7 +25,7 @@ void diagonalsum(int arr[][4],int n){
 }
 
 //optimised O(n)
-void diagonalsum(int arr[][4],int n){  
+void diagonalsum2(int arr[][4],int n){  
      int sum=0;
      for(int i=0;i<n;i++){
         sum+=arr[i][i];//primary diagnol
@@ -33,7 +33,7 @@ void diagonalsum(int arr[][4],int n){
             sum+=arr[i][n-i-1];//secondary diagonal 
         }
      }
-
+     cout<<"sum is "<<sum<<endl;
 }
 
 
@@ -45,6 +45,7 @@ int main(){
                    {13,14,15,16}};
     
     diagonalsum(arr,4);
+    diagonalsum2(arr,4);
                      
 
 
