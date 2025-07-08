@@ -3,6 +3,9 @@
 using namespace std;
 //Diagonal sum 
 //also can handle the edge cases like odd matrix
+
+
+//not so optimised
 void diagonalsum(int arr[][4],int n){  
      int sum=0;
      //time complexity is O(n^2)
@@ -20,6 +23,19 @@ void diagonalsum(int arr[][4],int n){
      cout<<"sum is "<<sum<<endl;
 
 }
+
+//optimised O(n)
+void diagonalsum(int arr[][4],int n){  
+     int sum=0;
+     for(int i=0;i<n;i++){
+        sum+=arr[i][i];//primary diagnol
+        if(i!=n-i-1){
+            sum+=arr[i][n-i-1];//secondary diagonal 
+        }
+     }
+
+}
+
 
 
 int main(){
