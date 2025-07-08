@@ -24,7 +24,7 @@ void bubblesort(int arr[],int n){
     print(arr,n); 
 }
 int main(){
-     int array[]={4,5,1,3,2};
+     int array[]={1,3,2,4,5};
      int n=sizeof(array)/sizeof(int);
      bubblesort(array,5);
      return 0;
