@@ -9,9 +9,6 @@ void reversechararray(char word[],int n){
       swap(word[start++],word[end--]);
      
     }
-    
-
-
 
 }
 int main(){
