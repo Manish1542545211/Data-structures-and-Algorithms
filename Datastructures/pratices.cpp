@@ -1,23 +1,16 @@
 #include<iostream>
 #include<cstring>
+#include <string>
 using namespace std;
-void toupper(char word[],int n){
-    for(int i=0;i<n;i++){
-        char ch=word[i];
-         if(ch>='A'&&ch<='Z'){
-            continue;
-         }else{word[i]=ch-'a'+'A';}
-
-    }
-}
-//convert to uppper case
 int main(){
-   char word[]="ApPle";
-   toupper(word,strlen(word));
+    string str="apna college! apna ";
+    int idx=str.find("apnas",10);
+   cout<<idx;
+    
+   
 
-   cout<<word<<endl;
-
-
+   
+   
 
 
      
