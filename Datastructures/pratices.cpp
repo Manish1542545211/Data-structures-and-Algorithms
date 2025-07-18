@@ -1,12 +1,19 @@
 #include<iostream>
 #include<cstring>
 #include <string>
+#include<utility>
+#include<algorithm>
 using namespace std;
+int* func(){
+    int *ptr=new int ;
+    *ptr=1200;
+    cout<<"pointer pointing to "<<*ptr<<endl;
+    return ptr;
+}
 int main(){
-    string str="apna college! apna ";
-    int idx=str.find("apnas",10);
-   cout<<idx;
-    
+     int *x=func();
+     cout<<*x<<endl;
+
    
 
    
