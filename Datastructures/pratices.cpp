@@ -5,39 +5,16 @@
 #include<algorithm>
 #include<vector>
 using namespace std;
+//creating 2d dyanamic array 
+
 
 int main(){
- bool isanagram(string str1,string str2){
-    if(str1.length()!=str2.length()){
-        cout<<"not valid anagram"<<endl;
-        return false;
-    }
-    int count[26]={0};
-    for(int i=0;i<str1.length();i++){
-       int idx=str1[i]-'a';
-       count[idx]++;
-    }
-    for(int i=0;i<str2.length();i++){
-        int idx=str2[i]-'a';
-        if(count[idx]==0){
-            cout<<"not valid anagram"<<endl;
-            return false; 
-        }
-        count[idx]--;
+//2d vector array and 2d dynamic array 
+cout<<(3&5)<<endl;
+cout<<(3|5)<<endl;
+cout<<(3^5)<<endl;
+cout<<(~0)<<endl;
 
-    }
-    cout<<"valid anagram"<<endl;
-    return true;
-}
-
-
-   
-
-   
-   
-
-
-     
   return 0;   
 
 }
