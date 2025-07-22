@@ -14,5 +14,5 @@ void FastExpo(int n,int x){
     cout<<ans<<endl;
 }
 int main(){
-    FastExpo(5,3);
+    FastExpo(3,4);
 }
