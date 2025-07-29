@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void FastExpo(int n,int x){
     int ans =1;
     while(n>0){
@@ -14,5 +15,9 @@ void FastExpo(int n,int x){
     cout<<ans<<endl;
 }
 int main(){
+    FastExpo(5,3);
     FastExpo(3,4);
 }
+
+
+
