@@ -16,6 +16,7 @@ class Child :public Parent{
 
 int main(){
     Child c1;
-    c1.show();
+    c1.show();//logically same property parent contain has the child so any one can execute but fucntion is different so the parent 
+    //class part is overridden by the child class
 
 }

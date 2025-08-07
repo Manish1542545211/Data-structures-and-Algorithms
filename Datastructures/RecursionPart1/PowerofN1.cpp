@@ -1,11 +1,9 @@
 #include<iostream>
-#include<cstring>
-#include <string>
-#include<utility>
-#include<algorithm>
 #include<vector>
 using namespace std;
- int Power(int X,int n,int i){
+//time complexity of O(n);
+
+int Power(int X,int n,int i){
    if(i==n){
       return 1;
    }

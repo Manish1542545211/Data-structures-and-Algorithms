@@ -13,7 +13,7 @@ class complex{
         cout<<real<<"+"<<img<<"i\n";
     }
     //operator overloading
-    complex operator +(complex &c2){
+    complex operator +(complex &c2){ //we are doing the operations on the c2 with help of c1;
         int resreal=this->real+c2.real;
         int resimg=this->img+c2.img;
         complex c3(resreal,resimg);
