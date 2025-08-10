@@ -5,28 +5,25 @@
 #include<algorithm>
 #include<vector>
 using namespace std;
- int Power(int X,int n,int i){
-   if(i==n){
-      return 1;
-   }
-   int power=X*Power(X,n,i+1);
-
-   return power;
-
+void search(int arr[],int i,int n,int Key){
+ if(i==n){
+  return ;
  }
+ if(arr[i]==Key){
+  cout<<i<<",";
+ }
+ return search(arr,i+1,n,2);
+}
+
 
 
 
 int main(){
-   cout<<Power(5,2,0)<<endl;
-    
-    
+  int arr[]={3,2,4,5,6,2,7,2,2};
+  int n=sizeof(arr)/sizeof(arr[0]);
+  search(arr,0,n,2);
 
-
-    
-
-
-
+  
   return 0;   
 
 }
