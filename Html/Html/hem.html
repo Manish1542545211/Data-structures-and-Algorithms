@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Pseudo-class for links */
+    a:link {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    a:active {
+      color: green;
+    }
+
+    /* Pseudo-class for child elements */
+    p:first-child {
+      font-weight: bold;
+      color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Pseudo-class Example</h2>
+
+  <p>This is the first paragraph (styled with :first-child).</p>
+  <p>This is the second paragraph (not affected).</p>
+
+  <a href="https://example.com" target="_blank">This is a link</a>
+
+</body>
+</html>
