@@ -1,6 +1,7 @@
-mystring=input("Enter a string")
-def dummy(a):
-    return a in "aeiouAEIOU"
+from functools import reduce
+mylist=[1,2,3,4]
+def dummy(a,b):
+    return a*b
 
-filtering=list(filter(dummy,mystring))
-print(filtering)
+reducevalue=reduce(dummy,mylist)
+print(reducevalue)
