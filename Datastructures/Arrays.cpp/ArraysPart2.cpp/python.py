@@ -1,0 +1,1 @@
+if(len(string)>=8 and )

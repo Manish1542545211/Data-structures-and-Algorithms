@@ -2,6 +2,7 @@
 #include<limits.h>
 using namespace std;
 //optimised version using Kadanes Algorithm
+//Time Complexity is O(N)
 void MaxsubarraysSum1(int arr[],int n){
     int Maxsum=INT_MIN;
     int cursum=0;
