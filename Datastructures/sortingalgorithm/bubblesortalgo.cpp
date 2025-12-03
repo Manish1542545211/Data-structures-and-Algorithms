@@ -18,13 +18,14 @@ void bubblesort(int arr[],int n){
             }
         }
         if(isswap==false){
+            cout<<"the array is already sorted"<<endl;
             return;
         }
     }
     print(arr,n); 
 }
 int main(){
-     int array[]={1,3,2,4,5};
+     int array[]={1,5,4,2,3};
      int n=sizeof(array)/sizeof(int);
      bubblesort(array,5);
      return 0;

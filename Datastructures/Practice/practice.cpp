@@ -1,31 +1,56 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-void selectionsort(int arr[], int n)
-{
-     for (int i = 0; i < n - 1; i++)
-     {
-          int minidx = i;
-          for (int j = i + 1; j < n; j++)
-          {
-               if (arr[j] < arr[minidx])
-               {
-                    minidx = j;
-               }
-          }
-          swap(arr[i], arr[minidx]);
-     }
-     for (int i = 0; i < n; i++)
-     {
-          cout << arr[i] << endl;
-     }
+#include<algorithm>
+#include<climits>
+
+void printarr(int arr[],int n){
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
 }
 
-int main()
-{
-     int arr[5] = {5, 4, 1, 3, 2};
-     int n = sizeof(arr) / sizeof(arr[0]);
-     selectionsort(arr, n);
+void countingsort(int arr[],int n){
+       int freq[1000000]={0};
+       int Mini=INT_MAX,Maxi=INT_MIN;
+       for(int i=0;i<n;i++){
+          Mini=min(Mini,arr[i]);
+          Maxi=max(Maxi,arr[i]);
+       }
+       
+       for(int i=Mini;i<=Maxi;i++){
+        freq[arr[i]]++;       
+       }
+       for(int i=Mini,j=0;i<=Maxi;i++){
 
-     return 0;
+         while(freq[i]>0){
+            arr[j++]=i;
+            freq[i]--;
+
+
+         }
+
+
+       }
+
+
+
+
+
 }
-// Hi my name is Rajat Bhagat
+
+
+
+
+
+
+
+
+int main(){
+    int arr[]={7,3,5,4};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    
+    
+    
+ return 0;
+}
