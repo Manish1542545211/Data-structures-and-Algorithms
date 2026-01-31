@@ -13,10 +13,11 @@ bool palindrome(char word[],int n){
       }
       start++;
       end--;
-      cout<<"valid palindrome"<<endl;
-      return true ;
+      
      
     }
+    cout<<"valid palindrome"<<endl;
+      return true ;
 
     
 
